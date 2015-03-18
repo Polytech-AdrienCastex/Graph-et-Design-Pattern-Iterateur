@@ -122,6 +122,7 @@ public class Graph implements IDirectedGraph
         return new BFSIterator(this, nodes.get(0));
     }
     
+    @Override
     public Iterator<Node> iterator(Node startNode)
     {
         return new BFSIterator(this, startNode);

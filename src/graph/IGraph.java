@@ -1,5 +1,6 @@
 package graph;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -25,5 +26,6 @@ public interface IGraph extends Iterable<Node> {
 	 */
 	public List<Node> getAdjNodes(Node _n);
 	
+        public Iterator<Node> iterator(Node startNode);
 	
 }
